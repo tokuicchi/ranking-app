@@ -37,5 +37,8 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-6. php artisan serve を実行する
+6. マイグレーションの実行をする。
+php artisan migrate
+
+7. php artisan serve を実行する
 http://127.0.0.1:8000 にアクセスできる。
