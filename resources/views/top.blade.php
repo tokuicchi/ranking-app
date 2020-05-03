@@ -71,7 +71,7 @@
       <h1 id="fh5co-logo"><a href="index.html">Links</a></h1>
       <nav id="fh5co-main-menu" role="navigation">
         <ul>
-          <li class="fh5co-active"><a href="/top">Top</a></li>
+          <li class="fh5co-active"><a href="/">Top</a></li>
           <li><a href="/ranking">Ranking</a></li>
           <li><a href="/list">List</a></li>
           <li><a href="/create">New</a></li>

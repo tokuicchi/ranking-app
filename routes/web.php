@@ -13,10 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// トップページ
 Route::get('/', function () {
     return view('top');
 });
 
+// ログインユーザー
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// 投稿一覧
+Route::get('/list', 'PostsController@list');
+
+// 新規投稿
+Route::get('/create', 'PostsController@create');
+Route::post('/create', 'PostsController@store');
+
+// 投稿削除
+Route::delete('/create', 'PostsController@create');
+
+// ランキング
+Route::get('/ranking', 'PostsController@ranking');
