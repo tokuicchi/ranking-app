@@ -10,23 +10,22 @@
 ## 環境構築手順
 
 1. ローカルにリポジトリを落とす
-git clone https://github.com/tokuicchi/ranking-app.git
+- git clone https://github.com/tokuicchi/ranking-app.git
 
 2. 作業ディレクトリへ移動
-cd ranking-app
+- cd ranking-app
 
 3. コンポーザーを更新
-以下2つのコマンドを実行する。(vendorなどがたりないため)
-composer update
-composer install
-【参考】
-http://vdeep.net/laravel-git-clone
+- 以下2つのコマンドを実行する。(vendorなどがたりないため)
+- composer update
+- composer install
+- 【参考】http://vdeep.net/laravel-git-clone
 
 4. DBの作成
-MySQLで「ranking」という名前のデータベースを作成する。
+- MySQLで「ranking」という名前のデータベースを作成する。
 
 5. .envファイルを用意する
-.env.exampleをコピーして、.envを作成し以下変更する
+- .env.exampleをコピーして、.envを作成し以下変更する
 
 ```
 DB_CONNECTION=mysql
@@ -38,7 +37,7 @@ DB_PASSWORD=
 ```
 
 6. マイグレーションの実行をする。
-php artisan migrate
+- php artisan migrate
 
 7. php artisan serve を実行する
 http://127.0.0.1:8000 にアクセスできる。
